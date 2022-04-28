@@ -1,0 +1,12 @@
+.spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  height: 80px;
+  width: 80px;
+  color: pink;
+  font-weight: bolder;
+  z-index: 0;
+}

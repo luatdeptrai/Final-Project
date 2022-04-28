@@ -1,0 +1,98 @@
+.container {
+  background-color: #f9f9f9;
+}
+.h1_Beaknew {
+  font-size: 3.5rem;
+  font-weight: 900;
+  padding: 40px;
+}
+h2 {
+  line-height: 50px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+img {
+  background-size: cover;
+}
+.btn {
+  display: flex;
+  align-self: flex-end;
+  justify-content: flex-end;
+}
+a:active,
+a:visited,
+.links:active,
+.active {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:link {
+  color: black;
+}
+
+.article-content {
+  margin-bottom: 60px;
+}
+.Content{
+  font-size:1.2rem;
+  line-height: 3vh;
+  font-weight: 300;
+}
+.as-content {
+  margin-top: 90px;
+}
+.h2_rout {
+  margin: 0px;
+}
+mat-icon {
+  font-size: 3rem;
+}
+.content_slider {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+.titile_slider {
+  width: 50%;
+}
+
+.cus {
+  justify-content: center;
+  align-items: center;
+}
+.custest {
+  justify-content: space-around;
+  background-color: #f9f9f9;
+  padding: 20px;
+  font-size: 2rem;
+  border-radius: 5px;
+}
+.fas {
+  font-size: 30px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+}
+.tittle {
+  width: 50%;
+}
+.longdash {
+  border-bottom: 1px solid black;
+  margin: 60px 0px;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+li {
+  list-style: none;
+}
+.img-responsive,.Content-img{
+  background-size: cover;
+  z-index: 2 ;
+  object-fit: cover;
+}

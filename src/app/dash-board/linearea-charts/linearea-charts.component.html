@@ -1,0 +1,8 @@
+<div class="buntton-Group ">
+    <button mat-button color="warn" (click)="OnUpdateVal('All')">Tất cả</button>
+    <button mat-button color="warn" (click)="OnUpdateVal('2month')">2 tháng</button>
+    <button mat-button color="warn" (click)="OnUpdateVal('month')">1 Tháng</button>
+    <button mat-button color="warn" (click)="OnUpdateVal('week')">1 tuần</button>
+</div>
+<highcharts-chart [Highcharts]="highcharts" [options]="chartOptions" ref="chart">
+</highcharts-chart>

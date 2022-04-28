@@ -1,0 +1,16 @@
+/* .navbar{
+    justify-content: space-between;
+}
+span{
+    padding: 20px;
+}
+a:active{
+    color: #fff!important;
+} */
+.navbar{
+    background-color: #5630c3 !important;
+    
+}
+a{
+    color: white !important;
+}

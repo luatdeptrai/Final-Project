@@ -1,0 +1,8 @@
+ng add @angular/material
+npm install --save chart.js
+npm install ngx-chart
+// const NewsData = require("../dataset/CrawlData.json");
+// router.get("/News", function (req, res) {
+//   res.status(200).json(NewsData);
+// });
+http://localhost/jhu-edu/latest

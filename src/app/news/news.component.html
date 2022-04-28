@@ -1,0 +1,55 @@
+<div class="container">
+    <h1 class="h1_Beaknew">Breaking News</h1>
+    <!-- <article class="article_newest">
+        <div class="Content_newest">
+            <img src={{Data?.img}} width="100%" height="800px" alt="">
+        </div>
+        <div class="Content_tittle">
+            <h2>{{Data?.title}}</h2>
+            <p class="Content">{{Data?.details}}</p>
+        </div>
+    </article> -->
+    <div class="longdash"></div>
+    <article class="article-content" *ngFor="let article of Data">
+        <div class="wraper row">
+            <div class="Content-img col-lg-6">
+                <img src="{{article.img}}" width="100%" height="350px" class="img-responsive" alt="">
+            </div>
+            <div class="Content_tittle col-lg-6 d-flex flex-column">
+                <h2>{{article.title}}</h2>
+                <p class="Content ">{{article.details}} </p>
+                <div class="linkroute mt-auto">
+                    <h2 class="h2_rout"><a [routerLink]="['/newsDetails',article.id]" routerLinkActive="active"
+                            class="links">_Read More_</a></h2>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </article>
+    <div class="longdash "></div>
+    <div class="title_mire">
+        <h2 class="hs text-center">More Content</h2>
+    </div>
+    <div class="as-content">
+
+        <ul>
+            <li *ngFor="let article of Data">
+                <div class="cus custest d-flex">
+                    <div class="tittle">
+                        <h2> {{article.title}}</h2>
+                    </div>
+                    <button class="btn" type="button" (click)="AnimateToggle('a')">
+                        <div class="menu-trigger" (click)="isOpen = !isOpen">
+                            <i class="fas fa-plus" [@INout]='isOpen'></i>
+                        </div>
+                    </button>
+                </div>
+                <div class="img_content">
+                    <img [@Imgdisplay]='currentState' src="{{article.img}}" alt="" width="100%">
+                </div>
+                <div class="longdash"></div>
+            </li>
+        </ul>
+    </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,228 @@
+<section class="worldwide">
+  <div class="container">
+    <h1>World Wide</h1>
+    <div class="card-container">
+      <div class="overview-card">
+        <div class="overview-card-left">
+          <div><i class="icon fa-solid fa-user"></i>
+            Total Cases
+          </div>
+          <div class="h3">{{ WorldCase?.confirmed | number }}</div>
+        </div>
+        <!-- <div class="overview-card-right">
+          <div class="overview-card-icon">
+            <i class="fas fa-virus"></i>
+          </div>
+        </div> -->
+        <h4 class="number">
+          2,055,342
+        </h4>
+      </div>
+      <div class="overview-card">
+        <div class="overview-card-left">
+          <div><i class="icon fa-solid fa-square-plus"></i>Recovered</div>
+          <div class="h3">{{ WorldCase?.recovered | number }}</div>
+        </div>
+        <!-- <div class="overview-card-right">
+          <div class="overview-card-icon">
+            <i class="fas fa-running"></i>
+          </div>
+        </div> -->
+        <h4 class="number">
+          123123
+        </h4>
+      </div>
+      <div class="overview-card">
+        <div class="overview-card-left">
+          <div><i class="icon fa-solid fa-users"></i>Deaths</div>
+          <div class="h3">{{ WorldCase?.deaths | number }}</div>
+        </div>
+        <!-- <div class="overview-card-right">
+          <div class="overview-card-icon">
+            <i class="fas fa-ghost"></i>
+          </div>
+        </div> -->
+        <h4 class="number">
+          456789
+        </h4>
+      </div>
+      <div class="overview-card">
+        <div class="overview-card-left">
+          <div><i class="icon fa-solid fa-circle-exclamation"></i>Fatality rate</div>
+        </div>
+        <!-- <div class="overview-card-right">
+          <div class="overview-card-icon">
+            <i class="fas fa-book-dead"></i>
+          </div>
+        </div> -->
+        <h4 class="mt-2">{{ FaltiRate.toFixed(2) }}<span>%</span></h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mt-5 regional">
+  <div class="container">
+  <div class="title mb-2">
+   <div>
+    <h1>Regional</h1>
+   </div>
+   <div>
+    <p>Country & region</p>
+    <select name="" id="">
+      <option value="1">Viet Nam</option>
+      <option value="1">English</option>
+      <option value="1">Thai Lan</option>
+    </select>
+   </div>
+  </div>
+    <div class="card-container">
+      <div class="overview-card">
+        <div class="overview-card-left">
+          <div><i class="icon fa-solid fa-user"></i>
+            Total Cases
+          </div>
+          <div class="h3">{{ WorldCase?.confirmed | number }}</div>
+        </div>
+        <!-- <div class="overview-card-right">
+          <div class="overview-card-icon">
+            <i class="fas fa-virus"></i>
+          </div>
+        </div> -->
+        <h4 class="number">
+          2,055,342
+        </h4>
+      </div>
+      <div class="overview-card">
+        <div class="overview-card-left">
+          <div><i class="icon fa-solid fa-square-plus"></i>Recovered</div>
+          <div class="h3">{{ WorldCase?.recovered | number }}</div>
+        </div>
+        <!-- <div class="overview-card-right">
+          <div class="overview-card-icon">
+            <i class="fas fa-running"></i>
+          </div>
+        </div> -->
+        <h4 class="number">
+          123123
+        </h4>
+      </div>
+      <div class="overview-card">
+        <div class="overview-card-left">
+          <div><i class="icon fa-solid fa-users"></i>Deaths</div>
+          <div class="h3">{{ WorldCase?.deaths | number }}</div>
+        </div>
+        <!-- <div class="overview-card-right">
+          <div class="overview-card-icon">
+            <i class="fas fa-ghost"></i>
+          </div>
+        </div> -->
+        <h4 class="number">
+          456789
+        </h4>
+      </div>
+      <div class="overview-card">
+        <div class="overview-card-left">
+          <div><i class="icon fa-solid fa-circle-exclamation"></i>Fatality rate</div>
+        </div>
+        <!-- <div class="overview-card-right">
+          <div class="overview-card-icon">
+            <i class="fas fa-book-dead"></i>
+          </div>
+        </div> -->
+        <h4 class="mt-2">{{ FaltiRate.toFixed(2) }}<span>%</span></h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="map">
+  <div class="container">
+    <div class="map-section">
+      <div class="map-container">
+        <div class="d-flex justify-content-between"> 
+          <div class="map-header font-weight-bold">Affected Area</div>
+          <!-- <div class="d-flex">
+            <div class="map-header-note-most mr-5">
+              <i class="fas fa-square most"></i>Most Affected
+            </div>
+            <div class="map-header-note-less">
+              <i class="fas fa-square less"></i>Less Affected
+            </div>
+          </div> -->
+        </div>
+        <div class="leaflet">
+          <app-map></app-map>
+        </div>
+      </div>
+      <!-- <div class="somethings">asda</div> -->
+    </div>
+  </div>
+</section>
+
+<!-- <section class="countries-chart">
+  <div class="container">
+    <div class="countries-container">
+      <div class="app-region"> -->
+        <!-- <div class="app-region-head font-weight-bold mt-3 ml-3">
+      Effected Top Countries
+    </div> -->
+        <!-- <app-region (eventClick)="GetSelectedVal($event)"></app-region> -->
+      <!-- </div>
+      <div class="app-chart"> -->
+        <!-- <app-linearea-charts></app-linearea-charts> -->
+        <!-- <router-outlet></router-outlet>
+      </div>
+    </div>
+    <h1>Country Details</h1>
+    <div class="card-container">
+      <div class="overview-card d-flex justify-content-between">
+        <div class="overview-card-left">
+          <div class="h3">{{ confirmedCountry | number }}</div>
+          <div>Total Cases</div>
+        </div>
+        <div class="overview-card-right">
+          <div class="overview-card-icon">
+            <i class="fas fa-virus"></i>
+          </div>
+        </div>
+      </div>
+      <div class="overview-card d-flex justify-content-between">
+        <div class="overview-card-left">
+          <div class="h3">{{ recovereddCountry| number }}</div>
+          <div>Recovered</div>
+        </div>
+        <div class="overview-card-right">
+          <div class="overview-card-icon">
+            <i class="fas fa-running"></i>
+          </div>
+        </div>
+      </div>
+      <div class="overview-card d-flex justify-content-between">
+        <div class="overview-card-left">
+          <div class="h3">{{ deathsCountry | number }}</div>
+          <div>Deaths</div>
+        </div>
+        <div class="overview-card-right">
+          <div class="overview-card-icon">
+            <i class="fas fa-ghost"></i>
+          </div>
+        </div>
+      </div>
+      <div class="overview-card d-flex justify-content-between">
+        <div class="overview-card-left">
+          <div class="h3">{{ FaltiRateCountry.toFixed(2) }}<span>%</span></div>
+          <div>Fatality rate</div>
+        </div>
+        <div class="overview-card-right">
+          <div class="overview-card-icon">
+            <i class="fas fa-book-dead"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- <section class="chart">
+
+</section> -->
